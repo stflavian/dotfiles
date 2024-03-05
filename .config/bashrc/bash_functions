@@ -1,0 +1,24 @@
+msmpc () {
+	ssh flavian@msm22-09.phys.tue.nl -X
+}
+
+pi () {
+	ssh pi@raspberrypi.local -X
+}
+
+tuepc () {
+	echo "Make sure the TU/e VPN is activated when running this!"
+	ssh 20200644@hpc.tue.nl -X
+}
+
+trash () {
+    path=$(readlink -f $1)
+    
+    {
+    echo $"[Trash Info]"
+    echo $"Path=$path"
+    echo $"DeletionDate=$(date +"%Y-%m-%dT%T")"
+    } >> ~/.local/share/Trash/info/$1.trashinfo
+
+    mv $1 ~/.local/share/Trash/files
+}
