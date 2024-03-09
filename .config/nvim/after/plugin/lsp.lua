@@ -13,21 +13,12 @@ end)
 -- integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {'pylsp', 'julials'},
+    ensure_installed = {'pylsp', 'julials', 'texlab', 'bashls'},
     handlers = {
         lsp_zero.default_setup,
     },
 })
 
-require('lspconfig').julials.setup({
-        symbol_cache_download = false,
-        on_new_config = function(new_config, _)
-            local julia = vim.fn.expand("~/.julia/environments/nvim-lspconfig/bin/julia")
-            if require('lspconfig').util.path.is_file(julia) then
-                new_config.cmd[1] = julia
-            end
-        end
-})
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
