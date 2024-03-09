@@ -12,13 +12,14 @@ tuepc () {
 }
 
 trash () {
-    path=$(readlink -f $1)
-    
+    filepath=$(readlink -f $1)
+    filename=$(readlink -f $1 | awk -F"/" '{print $NF}')
+
     {
     echo $"[Trash Info]"
-    echo $"Path=$path"
+    echo $"Path=$filepath"
     echo $"DeletionDate=$(date +"%Y-%m-%dT%T")"
-    } >> ~/.local/share/Trash/info/$1.trashinfo
+    } >> ~/.local/share/Trash/info/$filename.trashinfo
 
-    mv $1 ~/.local/share/Trash/files
+    mv $filepath ~/.local/share/Trash/files
 }
