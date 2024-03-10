@@ -23,3 +23,7 @@ trash () {
 
     mv $filepath ~/.local/share/Trash/files
 }
+
+activate () {
+    source ~/.venv/$1/bin/activate
+}

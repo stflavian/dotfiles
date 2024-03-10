@@ -1,0 +1,9 @@
+_activate() {
+    ENVS=$(ls ~/.venv)
+    local cur=${COMP_WORDS[COMP_CWORD]}
+
+    COMPREPLY=( $(compgen -W "${ENVS}" -- $cur) )
+}
+
+complete -F _activate activate
+
