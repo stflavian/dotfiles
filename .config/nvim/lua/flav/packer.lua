@@ -17,8 +17,9 @@ return require('packer').startup(function(use)
     -- Treesitter Highlighting
     use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-    -- OneDark Color Scheme
-    use 'navarasu/onedark.nvim'
+    -- Add Color Schemes
+    use "rebelot/kanagawa.nvim"
+    use "nyoom-engineering/oxocarbon.nvim"
 
     -- Language Server Protocol and Autocompletion
     use {

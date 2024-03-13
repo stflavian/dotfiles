@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/flavian/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/flavian/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/flavian/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -114,10 +119,10 @@ _G.packer_plugins = {
     path = "/home/flavian/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["onedark.nvim"] = {
+  ["oxocarbon.nvim"] = {
     loaded = true,
-    path = "/home/flavian/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
+    path = "/home/flavian/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

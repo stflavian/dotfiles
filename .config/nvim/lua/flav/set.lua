@@ -31,6 +31,12 @@ vim.api.nvim_create_autocmd('FileType', {
             vim.opt.shiftwidth = 2
             vim.opt.colorcolumn = "80"
             vim.keymap.set("n", "<leader>r", ":10split term://bash %<CR>")
+        elseif ft == "matlab" then
+            vim.opt.tabstop = 4
+            vim.opt.softtabstop = 4
+            vim.opt.shiftwidth = 4
+            vim.opt.colorcolumn = "80"
+            vim.keymap.set("n", "<leader>r", ":10split term://matlab -batch %:r<CR>")
         end
     end
 })
