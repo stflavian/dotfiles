@@ -5,6 +5,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.colorcolumn = "87"
+vim.opt.scrolloff = 4
 
 vim.opt.smartindent = true
 vim.opt.wrap = false
