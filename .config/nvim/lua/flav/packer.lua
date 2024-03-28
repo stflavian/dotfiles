@@ -19,8 +19,7 @@ return require('packer').startup(function(use)
 
     -- Add Color Schemes
     use "rebelot/kanagawa.nvim"
-    use "nyoom-engineering/oxocarbon.nvim"
-
+    
     -- Language Server Protocol and Autocompletion
     use {
         'VonHeikemen/lsp-zero.nvim',

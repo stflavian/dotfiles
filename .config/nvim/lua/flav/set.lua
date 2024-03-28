@@ -1,4 +1,9 @@
+-- Add line numbers
 vim.opt.nu = true
+
+-- Add spell check
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
