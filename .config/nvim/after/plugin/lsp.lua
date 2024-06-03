@@ -13,7 +13,7 @@ end)
 -- integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-    ensure_installed = {'pylsp', 'julials', 'texlab', 'bashls'},
+    ensure_installed = {'pylsp', 'julials', 'texlab', 'bashls', 'gopls'},
     handlers = {
         lsp_zero.default_setup,
     },

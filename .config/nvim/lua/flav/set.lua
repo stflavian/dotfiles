@@ -43,6 +43,20 @@ vim.api.nvim_create_autocmd('FileType', {
             vim.opt.shiftwidth = 4
             vim.opt.colorcolumn = "80"
             vim.keymap.set("n", "<leader>r", ":10split term://matlab -batch %:r<CR>")
+        elseif ft == "go" then
+            vim.opt.tabstop = 4
+            vim.opt.softtabstop = 4
+            vim.opt.shiftwidth = 4
+            vim.opt.colorcolumn = "90"
+            vim.keymap.set("n", "<leader>r", ":10split term://go run %<CR>")
+        elseif ft == "tex" then
+            vim.opt.tabstop = 2
+            vim.opt.softtabstop = 2
+            vim.opt.shiftwidth = 2
+            vim.opt.colorcolumn = "90"
+            vim.opt.wrap = true
+            vim.opt.linebreak = true
+            vim.keymap.set("n", "<leader>r", ":!pdflatex main.tex <CR>")
         end
     end
 })
